@@ -1,0 +1,372 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Here are two test dataframes that represent subject matter scores for students. \n",
+    "\n",
+    "Important points: \n",
+    "* Two of the students are shared between the two dataframes. So there are only six unique students. \n",
+    "* All students come from the same school, except one. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "details1 = {\n",
+    "    'Name': ['Sravan', 'Sai', 'Mohan', 'Luke'],\n",
+    "    'College': ['Vignan', 'Vignan', 'Vignan', 'Restov'],\n",
+    "    'Data Science': [93, 65, 65, 85]\n",
+    "}\n",
+    "\n",
+    "details2 = {\n",
+    "    'Name': ['Harsha', 'Saiteja', 'Sravan', 'Sai'],\n",
+    "    'College': ['Vignan', 'Vignan', 'Vignan', 'Vignan'],\n",
+    "    'Physics': [69, 76, 51, 43],\n",
+    "    'Chemistry': [67, 67, 55, 89],\n",
+    "    'Maths': [73, 65, 61, 85]\n",
+    "}\n",
+    "\n",
+    "df1 = pd.DataFrame(details1)\n",
+    "df2 = pd.DataFrame(details2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Name</th>\n",
+       "      <th>College</th>\n",
+       "      <th>Data Science</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Sravan</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>93</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Sai</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Mohan</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>Luke</td>\n",
+       "      <td>Restov</td>\n",
+       "      <td>85</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     Name College  Data Science\n",
+       "0  Sravan  Vignan            93\n",
+       "1     Sai  Vignan            65\n",
+       "2   Mohan  Vignan            65\n",
+       "3    Luke  Restov            85"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df1.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Name</th>\n",
+       "      <th>College</th>\n",
+       "      <th>Physics</th>\n",
+       "      <th>Chemistry</th>\n",
+       "      <th>Maths</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Harsha</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>69</td>\n",
+       "      <td>67</td>\n",
+       "      <td>73</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Saiteja</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>76</td>\n",
+       "      <td>67</td>\n",
+       "      <td>65</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Sravan</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>51</td>\n",
+       "      <td>55</td>\n",
+       "      <td>61</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>Sai</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>43</td>\n",
+       "      <td>89</td>\n",
+       "      <td>85</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "      Name College  Physics  Chemistry  Maths\n",
+       "0   Harsha  Vignan       69         67     73\n",
+       "1  Saiteja  Vignan       76         67     65\n",
+       "2   Sravan  Vignan       51         55     61\n",
+       "3      Sai  Vignan       43         89     85"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df2.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Outer Merge code\n",
+    "\n",
+    "Specify which columns you want to be shared by using the 'on' flag. In this example, the code will merge using the 'Name' and 'College' columns. \n",
+    "\n",
+    "If there isn't a shared representation then no merge happens (e.g. Luke doesn't show up in df2). Instead, the non-merged entries are concatenated at the end of the new dataframe. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "outer_merged = pd.merge(df1, df2, how=\"outer\", on=[\"Name\", \"College\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Name</th>\n",
+       "      <th>College</th>\n",
+       "      <th>Data Science</th>\n",
+       "      <th>Physics</th>\n",
+       "      <th>Chemistry</th>\n",
+       "      <th>Maths</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Sravan</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>93.0</td>\n",
+       "      <td>51.0</td>\n",
+       "      <td>55.0</td>\n",
+       "      <td>61.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Sai</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>65.0</td>\n",
+       "      <td>43.0</td>\n",
+       "      <td>89.0</td>\n",
+       "      <td>85.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Mohan</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>65.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>Luke</td>\n",
+       "      <td>Restov</td>\n",
+       "      <td>85.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>Harsha</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>69.0</td>\n",
+       "      <td>67.0</td>\n",
+       "      <td>73.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>Saiteja</td>\n",
+       "      <td>Vignan</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>76.0</td>\n",
+       "      <td>67.0</td>\n",
+       "      <td>65.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "      Name College  Data Science  Physics  Chemistry  Maths\n",
+       "0   Sravan  Vignan          93.0     51.0       55.0   61.0\n",
+       "1      Sai  Vignan          65.0     43.0       89.0   85.0\n",
+       "2    Mohan  Vignan          65.0      NaN        NaN    NaN\n",
+       "3     Luke  Restov          85.0      NaN        NaN    NaN\n",
+       "4   Harsha  Vignan           NaN     69.0       67.0   73.0\n",
+       "5  Saiteja  Vignan           NaN     76.0       67.0   65.0"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "outer_merged.head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
