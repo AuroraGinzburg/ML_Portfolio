@@ -26,7 +26,7 @@ This project aims to understand the relationships between weather and energy dem
 ## Getting Started
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is acquired during web scraping in Notebook 1. I used a Chrome web browser during web scraping, the ChromeDriver can be downloaded [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). The only external raw data used was the California shapefiles needed to generate a geoplot in Notebook 3, can be found in the [shapefiles folder](https://github.com/AuroraGinzburg/ML_Portfolio/tree/master/shapefiles). 
+2. Raw Data is acquired during web scraping in Notebook 1. I used a Chrome web browser during web scraping, the ChromeDriver can be downloaded [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). The only external raw data used was the California shapefiles needed to generate a geoplot in Notebook 3, can be found in the [shapefiles folder](https://github.com/AuroraGinzburg/ML_Portfolio/tree/master/shapefiles). There is a folder of CSV files that served as save points; downloading these is not necessary to run the notebooks.
     
 3. Go through the three notebooks sequentially. 
 
