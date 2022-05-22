@@ -1,4 +1,4 @@
-![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/main/github_splash.tif)
+![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/master/github_splash.tif)
 
 # Predicting California's Energy Demand
 Forecasting future energy demand is crucial for the success of renewable energy systems. 
