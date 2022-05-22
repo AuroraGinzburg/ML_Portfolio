@@ -1,3 +1,5 @@
+![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/main/github_splash.tif)
+
 # Predicting California's Energy Demand
 Forecasting future energy demand is crucial for the success of renewable energy systems. 
 Energy that is generated from wind and solar sources needs to be stored upon capture so that it can be used when the sun isn't shining and the wind isn't blowing.
