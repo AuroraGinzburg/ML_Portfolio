@@ -40,3 +40,11 @@ This project aims to understand the relationships between weather and energy dem
 ## Contact
 * Feel free to contact me with any questions or if you are interested in collaborating on future work! 
  **auroraginz@gmail.com**
+ 
+## Resources
+The following community resources were helpful when developing this project:
+* [Web-Scraping Electricity Data with Selenium] (https://medium.com/@k246fri/web-scraping-electricity-data-with-selenium-f2504a124fc4)
+* [Getting Weather Data in 3 Easy Steps] (https://towardsdatascience.com/getting-weather-data-in-3-easy-steps-8dc10cc5c859)
+* [Encoding Time Information as Features for ML Models] (https://developer.nvidia.com/blog/three-approaches-to-encoding-time-information-as-features-for-ml-models/)
+* [A Gentle Introduction to Batch Normalization for Deep Neural Networks] (https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/)
+* [Hyperparameter Tuning with KerasTuner] (https://towardsdatascience.com/hyperparameter-tuning-with-kerastuner-and-tensorflow-c4a4d690b31a)
