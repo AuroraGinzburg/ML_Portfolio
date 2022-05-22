@@ -30,7 +30,7 @@ This project aims to understand the relationships between weather and energy dem
     
 3. Go through the three notebooks sequentially. 
 
-## Featured Notebooks/Analysis/Deliverables
+## Featured Notebooks
 * [Notebook 1: Web Scraping of Energy and Weather Data](https://github.com/AuroraGinzburg/ML_Portfolio/blob/7249b7754bafc3cfbfbbfcbc9650e7fb8784bdc8/1-Data%20Scraping.ipynb)
 * [Notebook 2: Exploratory Data Analysis and Data Cleaning](https://github.com/AuroraGinzburg/ML_Portfolio/blob/7249b7754bafc3cfbfbbfcbc9650e7fb8784bdc8/2-Data%20Cleaning%20and%20EDA.ipynb)
 * [Notebook 3: Data Visualization, Model Building and Model Evaluation](https://github.com/AuroraGinzburg/ML_Portfolio/blob/7249b7754bafc3cfbfbbfcbc9650e7fb8784bdc8/3-Data%20Visualization%20and%20Modeling.ipynb)
