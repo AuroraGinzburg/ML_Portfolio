@@ -16,7 +16,7 @@ This project aims to understand the relationships between weather and energy dem
 - California energy demand data is from [California ISO](https://www.caiso.com/TodaysOutlook/Pages/default.aspx#section-demand-trend)
 - Weather data is from [NOAA's National Centers for Environmental Information](https://www.ncdc.noaa.gov/cdo-web/webservices/v2)
 - Weather data points were requested from weather stations at the following 7 locations: Fresno, Los Angeles Coastal, Los Angeles Inland, Sacramento, 
-  San Diego, San Francisco, San Jose (see Notebook 1 for location ID numbers).
+  San Diego, San Francisco, San Jose (see Notebook 1 for location ID numbers)
 - The weather data used consisted of the daily minimum and maximum temperature for each location
 - The dataset used spanned April 2018-May 2022
 - The energy demand data used was the total state demand per day
@@ -39,4 +39,4 @@ This project aims to understand the relationships between weather and energy dem
 
 ## Contact
 * Feel free to contact me with any questions or if you are interested in collaborating on future work! 
-* **auroraginz@gmail.com**
+ **auroraginz@gmail.com**
