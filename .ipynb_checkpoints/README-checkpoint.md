@@ -28,7 +28,7 @@ This project aims to understand the relationships between weather and energy dem
 ## Getting Started
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is acquired during web scraping in Notebook 1. A Chrome web browser was employed for web scraping and the ChromeDriver can be downloaded [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). The only external raw data used was the California shapefiles needed to generate a geoplot in Notebook 3, they can be found in the [shapefiles folder](https://github.com/AuroraGinzburg/ML_Portfolio/tree/master/shapefiles). There is a folder of CSV files that served as save points; downloading these is not necessary to run the notebooks.    
+2. Raw Data is acquired during web scraping in Notebook 1. A Chrome web browser was employed for web scraping and the ChromeDriver can be downloaded [here](https://sites.google.com/chromium.org/driver/). The only external raw data used was the California shapefiles needed to generate a geoplot in Notebook 3, they can be found in the [shapefiles folder](https://github.com/AuroraGinzburg/ML_Portfolio/tree/master/shapefiles). There is a folder of CSV files that served as save points; downloading these is not necessary to run the notebooks.    
 3. Go through the three notebooks sequentially. 
 
 ## Featured Notebooks
@@ -43,8 +43,8 @@ This project aims to understand the relationships between weather and energy dem
  
 ## Resources
 The following community resources were helpful when developing this project:
-* [Web-Scraping Electricity Data with Selenium] (https://medium.com/@k246fri/web-scraping-electricity-data-with-selenium-f2504a124fc4)
-* [Getting Weather Data in 3 Easy Steps] (https://towardsdatascience.com/getting-weather-data-in-3-easy-steps-8dc10cc5c859)
-* [Encoding Time Information as Features for ML Models] (https://developer.nvidia.com/blog/three-approaches-to-encoding-time-information-as-features-for-ml-models/)
-* [A Gentle Introduction to Batch Normalization for Deep Neural Networks] (https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/)
-* [Hyperparameter Tuning with KerasTuner] (https://towardsdatascience.com/hyperparameter-tuning-with-kerastuner-and-tensorflow-c4a4d690b31a)
+* [Web-Scraping Electricity Data with Selenium](https://medium.com/@k246fri/web-scraping-electricity-data-with-selenium-f2504a124fc4)
+* [Getting Weather Data in 3 Easy Steps](https://towardsdatascience.com/getting-weather-data-in-3-easy-steps-8dc10cc5c859)
+* [Encoding Time Information as Features for ML Models](https://developer.nvidia.com/blog/three-approaches-to-encoding-time-information-as-features-for-ml-models/)
+* [A Gentle Introduction to Batch Normalization for Deep Neural Networks](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/)
+* [Hyperparameter Tuning with KerasTuner](https://towardsdatascience.com/hyperparameter-tuning-with-kerastuner-and-tensorflow-c4a4d690b31a)
