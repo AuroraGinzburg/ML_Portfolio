@@ -1,8 +1,9 @@
 ![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/master/Github_splash.png)
 
-#### [Medium blog project write-up](https://medium.com/@auroraginzburg/predicting-californias-energy-demand-with-weather-data-d8b35de0c5e3)
-
 # Predicting California's Energy Demand
+
+#### I have written this project up in a [Medium blog post.](https://medium.com/@auroraginzburg/predicting-californias-energy-demand-with-weather-data-d8b35de0c5e3)
+
 Forecasting future energy demand is crucial for the success of renewable energy systems. 
 Energy that is generated from wind and solar sources needs to be stored upon capture so that it can be used during periods of intermittency.
 Therefore, the ability to accurately anticipate future energy demand is of the utmost importance for designing the most economical and reliable energy storage systems.
