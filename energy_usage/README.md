@@ -1,4 +1,4 @@
-![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/master/Github_splash.png)
+![Project Schematic](https://github.com/AuroraGinzburg/ML_Portfolio/blob/5bd50c3e456c87959539fb86dc8f4e6b9a337722/energy_usage/Github_splash.png)
 
 # Predicting California's Energy Demand
 
