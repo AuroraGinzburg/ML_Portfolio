@@ -2,4 +2,4 @@
 
 # Wind_turbine Overview:
 
-This GitHub repo ongoing freelance work for [decarbonfuse](https://decarbonfuse.com/).
+This GitHub repo is ongoing freelance work for [decarbonfuse](https://decarbonfuse.com/).
